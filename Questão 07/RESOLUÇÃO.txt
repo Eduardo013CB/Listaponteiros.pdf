@@ -1,0 +1,5 @@
+R:  p = mat + 1; 
+
+esta expressão está correta, pois mat é um ponteiro 
+para o primeiro elemento do array e mat + 1 aponta para um segundo elemento. 
+Logo, p aponta para um segundo elemento do array.

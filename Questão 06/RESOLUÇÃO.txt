@@ -1,0 +1,4 @@
+Resposta: *(pulo + 2); 
+
+"pulo" é o ponteiro para o primeiro elemento do vetor e o + desloca o ponteiro 
+para uma outra posição, que neste caso, é a terceira.

@@ -1,0 +1,18 @@
+p==&i; 
+
+R: O valor desta expressão é 3.
+
+p-q;
+
+R: O resultado desta expressão é -2. 
+
+
+**&p;
+
+R: O resultado desta expressão é 3. 
+
+
+3 -p/()+7; 
+
+
+R: O resultado desta expressão é 10

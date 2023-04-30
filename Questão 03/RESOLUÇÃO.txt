@@ -1,0 +1,1 @@
+Resposta: são ilegais as expressões  i= (*&)j; q= *p; e i=(*p)++ + *q;

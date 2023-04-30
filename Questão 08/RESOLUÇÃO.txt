@@ -1,0 +1,6 @@
+Esse programa cria um vetor para inteiros "vet" atribuindo os valores de 4,9,13 no qual utiliza um "for" 
+para imprimir cada elemento deste vetor utilizando a conotação de ponteiros. 
+
+
+O segundo programa vai fazer basicamente o que o primeiro faz. Entretanto, este programa 
+vai imprimir endereço de cada elemento do vetor utilizando a conotação de ponteiros.

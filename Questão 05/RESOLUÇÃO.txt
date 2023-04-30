@@ -1,0 +1,15 @@
+Este programa vai imprimir uma tabela com cinco linhas, com cada linha 
+apresentando o indicador do vetor, o valor armazenado deste indicador 
+do vetor,os endereços de memória do elemento correspondente para o vetor e 
+ponteiro e o valor apontado pelo ponteiro que aponta para o vetor.
+
+
+
+Após a compilação foi imprimido na tela: 
+
+contador/valor/valor/endereco/endereco
+i = 0 vet[0] = 1.1 *(f + 0) = 1.1 &vet[0] = 0x7fff4e21ef40 (f + 0) = 0x7fff4e21ef40
+i = 1 vet[1] = 2.2 *(f + 1) = 2.2 &vet[1] = 0x7fff4e21ef44 (f + 1) = 0x7fff4e21ef44
+i = 2 vet[2] = 3.3 *(f + 2) = 3.3 &vet[2] = 0x7fff4e21ef48 (f + 2) = 0x7fff4e21ef48
+i = 3 vet[3] = 4.4 *(f + 3) = 4.4 &vet[3] = 0x7fff4e21ef4c (f + 3) = 0x7fff4e21ef4c
+i = 4 vet[4] = 5.5 *(f + 4) = 5.5 &vet[4] = 0x7fff4e21ef50 (f + 4) = 0x7fff4e21ef50
