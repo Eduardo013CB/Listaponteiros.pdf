@@ -12,7 +12,7 @@ int divisão(int a, int b) {
 int main() {
   int (*função)(int, int); // ponteiro para função que recebe dois inteiros e retorna um inteiro
 
-  // atribui o endereço da função "soma" ao ponteiro "função"
+  // atribui o endereço da função "divisão" ao ponteiro "função"
   função = divisão;
   printf("O resultado da divisão de 12 por 6 é: %d\n", função(12, 6));
 
