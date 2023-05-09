@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+
+//Um ponteiro para função é um tipo de ponteiro que aponta para o endereço de memória onde está armazenada uma função// 
+
+
+int divisão(int a, int b) {
+  return a / b;
+}
+
+
+int main() {
+  int (*função)(int, int); // ponteiro para função que recebe dois inteiros e retorna um inteiro
+
+  // atribui o endereço da função "soma" ao ponteiro "função"
+  função = divisão;
+  printf("O resultado da divisão de 12 por 6 é: %d\n", função(12, 6));
+
+
+  return 0;
+}

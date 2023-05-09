@@ -1,0 +1,70 @@
+#include <stdio.h>
+
+int main(void){
+  
+  int  int_array[4]; 
+  char char_array[4]; 
+  float float_array[4]; 
+  double double_array [4]; 
+  
+  printf("enderecos de memória do tipo int:\n");
+
+  printf("&int array [0]: %p\n", &int_array [0]); 
+
+  printf("&int array [1]: %p\n", &int_array [1]); 
+
+  printf("&int array [2]: %p\n", &int_array [2]); 
+
+  printf("&int array [3]: %p\n", &int_array [3]); 
+
+  printf("\n"); 
+  
+
+  printf("enderecos de memória do tipo char:\n");
+
+  printf("&char array [0]: %p\n", &char_array [0]); 
+
+  printf("&char array [1]: %p\n", &char_array [1]); 
+
+  printf("&char array [2]: %p\n", &char_array [2]); 
+
+  printf("&char array [3]: %p\n", &char_array [3]); 
+
+  printf("\n"); 
+
+  
+  printf("enderecos de memória do tipo float:\n");
+
+  printf("&float array [0]: %p\n", &float_array [0]); 
+
+  printf("&float array [1]: %p\n", &float_array [1]); 
+  
+  printf("&float array [2]: %p\n", &float_array [2]); 
+
+  printf("&float array [3]: %p\n", &float_array [3]); 
+
+  printf("\n"); 
+
+  
+  printf("enderecos de memória do tipo double:\n");
+
+  printf("&double array [0]: %p\n", &double_array [0]); 
+
+  printf("&double array [1]: %p\n", &double_array [1]); 
+
+  printf("&double array [2]: %p\n", &double_array [2]); 
+
+  printf("&double array [3]: %p\n", &double_array [3]); 
+
+
+  //Como char: 4092, 4093, 4094 e 4095.
+
+  //Como int: 4092, 4094,4096 e 4098. 
+
+  //Como float: 4092, 4096, 4100 e 4104.
+
+  //Como double : 4092, 4100, 4108 e 4116. 
+
+  
+  return 0;
+}
