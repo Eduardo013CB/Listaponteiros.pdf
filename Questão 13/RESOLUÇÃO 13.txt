@@ -1,0 +1,67 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+
+void float_valoresnumericos(float *valoresnumericos, int n){
+int i,j; 
+float trocavalores; 
+for(i=0; i<n-1;i++){
+for(j=0; j<n-i-1; j++){ 
+if(valoresnumericos[j]> valoresnumericos[j+1]){
+trocavalores = valoresnumericos[j];
+ valoresnumericos[j] = valoresnumericos[j+1];
+  valoresnumericos[j+1] = trocavalores; 
+  
+           }
+
+  
+        }
+
+
+    }
+  
+} 
+  
+  
+  int main()   {
+int n,i; 
+float *valoresnumericos;
+
+printf("digite a quantidade de valores: ");
+scanf("%d", &n); 
+
+
+// alocação dinâmica de memoria//
+valoresnumericos = (float*)malloc(n *sizeof(float));
+if (valoresnumericos == NULL) {
+printf ("erro na alocação de memoria. \n");
+
+return 00; 
+}
+
+
+  // Ler os valores//
+    
+  printf("digite os valores:\n");
+  for (i= 0; i<n; i++){ 
+  scanf("%f", &valoresnumericos [i]); 
+}
+
+//Ordenação dos valores  na forma crescente//
+    
+float_valoresnumericos(valoresnumericos, n);
+
+  // Apresentaçao dos valores de forma crescente//
+
+printf("valores de n em ordem crescente:\n");
+for( i= 0; i<n; i++){
+printf("%.2f", valoresnumericos[i]);
+  
+}
+
+//Liberação de memória 
+
+free(valoresnumericos);
+  
+return 0;
+}
