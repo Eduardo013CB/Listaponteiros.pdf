@@ -1,0 +1,65 @@
+#include <stdio.h>
+    #include <stdlib.h>
+
+    // Função de comparação para qsort
+
+    int comparaçao(const void *a, const void *b) {
+    float value1 = *((float*)a);
+    float value2 = *((float*)b);
+    
+    if (value1 < value2) {
+        return -1;
+    } else if (value1 > value2) {
+        return 1;
+    } else {
+        return 0;
+    }
+}
+
+     //Usando a função qsort() para ordenar o vetor 
+     //"valoresnumericos" em ordem crescente//
+
+     void float_valoresnumericos(float *valoresnumericos, int n) {
+     qsort(valoresnumericos, n, sizeof(float), comparaçao);
+}
+
+
+     int main() {
+     int n, i;
+     float *valoresnumericos;
+
+     printf("Digite a quantidade de valores a serem comparados: ");
+     scanf("%d", &n);
+
+     // Alocação dinâmica de memória//
+     
+     valoresnumericos = (float*)malloc(n * sizeof(float));
+     if (valoresnumericos == NULL) {
+     printf("Erro na alocação de memória.\n");
+     return 0;
+    }
+
+     // Leitura dos valores//
+
+     printf("Digite os valores:\n");
+     for (i = 0; i < n; i++) {
+     scanf("%f", &valoresnumericos[i]);
+    }
+
+     //Ordenaçao dos valores em ordem crescente utilizando 
+     //qsort/
+    
+     qsort(valoresnumericos, n, sizeof(float), comparaçao);
+
+     // Apresenta os valores em ordem crescente//
+    
+     printf("Valores em ordem crescente após comparação:\n");
+     for (i = 0; i < n; i++) {
+     printf("%.2f ", valoresnumericos[i]);
+    }
+     printf("\n");
+
+     // Liberação de memória//
+     free(valoresnumericos);
+
+     return 0;}
